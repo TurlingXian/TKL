@@ -1,6 +1,6 @@
 # config
-cover: /img/bg_img.jpg
-logo: /img/logo.png
+cover: /img/cover1.png
+logo: /img/pkq.png
 top_saying:
 - title: YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.
 - content: 每一个不曾起舞的日子都是对生命的辜负。
@@ -8,7 +8,7 @@ bottom_saying: 虽然还没想好写点什么，但是总觉得这里放句话�
 # Content
 excerpt_link: Read More
 
-rss: /atom.xml
+# rss: /atom.xml
 
 highlightjs: vs
 
@@ -62,3 +62,26 @@ local_search:
   trigger: auto
   # show top n results per article, show all results by setting to -1
   top_n_per_article: 2
+
+# live2d public + helper-featured configuration
+# live2d:
+#   enable: true
+#   scriptFrom: local
+#   pluginRootPath: live2dw/
+#   pluginJsPath: lib/
+#   pluginModelPath: assets/
+#   tagMode: false
+#   debug: false
+#   model:
+#     use: live2d-widget-model-koharu
+#   display:
+#     position: right
+#     width: 150
+#     height: 300
+#   mobile:
+#     show: true
+#     scale: 0.5
+#   react:
+#     opacity: 0.5
+#     opacityDefault: 0.7
+#     opacityOnHover: 0.9

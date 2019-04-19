@@ -3297,9 +3297,20 @@ footer .footer_bottom {
 	margin: 0 auto 50px;
 }
 
+section#intro {
+	background:url(../img/background.png);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	background-color: rgb(256,256,256, 0.94);
+}
+
 #intro .col-md-8.col-md-offset-2 {
 	padding-left: 0;
 	padding-right: 0;
+	z-index: 999;
+	background: white;
 }
 #intro .col-md-8.col-md-offset-2 img {
 	max-width: 100%;
