@@ -7,7 +7,7 @@
         <!-- Lists in Slidebars -->
         <ul class="sb-menu">
             <li><a href="<%- config.root %>" class="animsition-link" title="Home">Home</a></li>
-            <li><a href="<%- config.root %><%- config.archive_dir %>" class="animsition-link" title="archive">archives</a></li>
+            <li><a href="<%- config.root %><%- config.archive_dir %>" class="animsition-link" title="archive">归档</a></li>
             <!-- Dropdown Menu -->
 			 <% if (theme.works && theme.works.length){ %>
             <li>
@@ -21,14 +21,25 @@
             <% } %>
             <% if (site.categories.length){ %>
         	<li>
-        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+        		<a class="sb-toggle-submenu">分类<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
 				  	<% site.categories.sort('name').each(function(item){ %>
 				    <li><a href="<%- config.root %><%- item.path %>" class="animsition-link"><%= item.name %><small>(<%= item.posts.length %>)</small></a></li>
 				    <% }); %>
 				</ul>
         	</li>
-			<% } %>
+            <% } %>
+            <!-- <li><a href="<%- config.root %><%- config.tag_dir %>" class="animsition-link" title="tag">标签</a></li> -->
+            <% if (site.tags.length){ %>
+                <li>
+                    <a class="sb-toggle-submenu">标签<span class="sb-caret"></span></a>
+                    <ul class="sb-submenu">
+                          <% site.tags.sort('name').each(function(item){ %>
+                        <li><a href="<%- config.root %><%- item.path %>" class="animsition-link"><%= item.name %><small>(<%= item.posts.length %>)</small></a></li>
+                        <% }); %>
+                    </ul>
+                </li>
+            <% } %>
             <% if (theme.links && theme.links.length){ %>
             <li>
                 <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
@@ -46,7 +57,7 @@
             <li><a href="javascript:;" class="popup-trigger" title="Search"><span class="search-icon"></span>Search</a></li>
             <% } %>
             <li><a href="<%- config.root %>about.html" class="animsition-link" title="about">About</a></li>
-            <li><a href="<%- config.root %>atom.xml" class="animsition-link" title="rss">RSS</a></li>
+            <!-- <li><a href="<%- config.root %>atom.xml" class="animsition-link" title="rss">RSS</a></li> -->
         </ul>
     </div>
     

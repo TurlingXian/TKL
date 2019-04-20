@@ -8,9 +8,15 @@
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<%- post.content %>
+              <%- post.content %>
+              
             <div class="clearfix"></div>
             <hr class="nogutter">
+            <% if (post.comments){ %>
+            <%- partial('post/livere') %>
+            <% } else { %>
+                <div class="lv-container"></div>
+            <% } %>
         </div>
         <%- partial('post/navigation') %>
         <div class="col-md-8 col-md-offset-2 col-sm-24"><%- partial('post/comments') %></div>
