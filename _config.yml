@@ -85,3 +85,5 @@ local_search:
 #     opacity: 0.5
 #     opacityDefault: 0.7
 #     opacityOnHover: 0.9
+
+layout: false
