@@ -1,5 +1,5 @@
 # config
-cover: http://pqcfxq8uk.bkt.clouddn.com/blog/2019-04-24-cover1.png
+cover: http://images.turlingxian.com/blog/2019-05-01-cover1.png
 logo: /img/pkq.png
 top_saying:
 - title: YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.
@@ -46,10 +46,10 @@ timeline:
 - num: 4
   word: More
 
-#Links
-# links:
-# - name: Kieran
-#   link: http://go.kieran.top/
+# Links
+links:
+- name: yuexine's blog
+  link: https://yuexine.github.io/
 # - name: Name
 #   link: http://domain.com/
 
